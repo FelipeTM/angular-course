@@ -1,9 +1,11 @@
-import { Subject } from "rxjs";
+import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
-import { Ingredient } from "../shared/ingredient.model";
+import { Ingredient } from '../shared/ingredient.model';
 
+@Injectable()
 export class ShoppingListService {
-    
+
     ingredientsChanged = new Subject<Ingredient[]>();
     startedEditing = new Subject<number>();
 

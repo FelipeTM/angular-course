@@ -14,7 +14,7 @@ export interface AuthResponseData {
     registered?: boolean;
 }
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class AuthService {
 
     private readonly API_KEY: string = 'AIzaSyAHRnm6JdvBEKRVrVDfPRdi3wcg6dqy4EE';

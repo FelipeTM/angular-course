@@ -1,9 +1,10 @@
-import { Routes, RouterModule } from "@angular/router";
+import { Routes, RouterModule } from '@angular/router';
+
 import { ShoppingListComponent } from './shopping-list.component';
 import { NgModule } from '@angular/core';
 
 const routes: Routes = [
-    { path: 'shopping-list', component: ShoppingListComponent },
+    { path: '', component: ShoppingListComponent },
 ];
 
 @NgModule({

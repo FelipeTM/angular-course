@@ -1,9 +1,9 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
-import { Recipe } from "./recipe.model";
-import { Ingredient } from "../shared/ingredient.model";
-import { ShoppingListService } from "../shopping-list/shopping-list.service";
+import { Recipe } from './recipe.model';
+import { Ingredient } from '../shared/ingredient.model';
+import { ShoppingListService } from '../shopping-list/shopping-list.service';
 
 @Injectable()
 export class RecipeService {
@@ -11,12 +11,12 @@ export class RecipeService {
     recipesChanged = new Subject<Recipe[]>();
 
     // private recipes: Array<Recipe> = [
-    //     new Recipe("Manteiga", 
-    //     "É manteiga, cara", 
-    //     "https://receitanatureba.com/wp-content/uploads/2017/12/66-5.jpg", 
+    //     new Recipe("Manteiga",
+    //     "É manteiga, cara",
+    //     "https://receitanatureba.com/wp-content/uploads/2017/12/66-5.jpg",
     //     [new Ingredient('Leite', 1), new Ingredient('Sal', 1)]),
-    //     new Recipe("Manteiga", 
-    //     "Manteiga, porra", 
+    //     new Recipe("Manteiga",
+    //     "Manteiga, porra",
     //     "https://receitanatureba.com/wp-content/uploads/2017/12/66-5.jpg",
     //     [new Ingredient('Leite', 1), new Ingredient('Sal', 1)])
     // ];
